@@ -3,7 +3,7 @@ import "../styles/switch.css";
 
 type SwitchProps = {
   isOn: boolean;
-  handleToggle: () => void;
+  handleToggle: () => boolean;
 };
 
 export default function Switch({ isOn, handleToggle }: SwitchProps) {

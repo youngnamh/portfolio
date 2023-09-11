@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import NavBar from "./components/NavBar";
-import Switch from "./components/Switch";
 import Contents from "./components/Contents";
 
 function App() {
@@ -11,8 +10,7 @@ function App() {
   return (
     <div style={chooseMode()}>
       <div>
-        <NavBar />
-        <Switch
+        <NavBar
           isOn={darkMode}
           handleToggle={() => {
             setDarkMode(!darkMode);

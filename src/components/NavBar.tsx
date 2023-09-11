@@ -1,11 +1,23 @@
 import React from "react";
+import Switch from "./Switch";
 
-export default function NavBar() {
+type NavProps = {
+  isOn: boolean;
+  handleToggle: () => void;
+};
+
+export default function NavBar({ isOn, handleToggle }: NavProps) {
   return (
     <div style={NAV_STYLES}>
       <div>About</div>
       <div>Projects</div>
       <div>Contact</div>
+      <Switch
+        isOn={isOn}
+        handleToggle={() => {
+          handleToggle(!isOn);
+        }}
+      />
     </div>
   );
 }
