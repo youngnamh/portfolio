@@ -1,16 +1,15 @@
-import React from "react";
 import "../styles/switch.css";
 
 type SwitchProps = {
   isOn: boolean;
-  handleToggle: () => boolean;
+  handleToggle: () => void;
 };
 
 export default function Switch({ isOn, handleToggle }: SwitchProps) {
   const chooseBackground = () => (isOn ? "#7209b7" : "#48cae4");
 
   return (
-    <div>
+    <div className="switch-container">
       <input
         checked={isOn}
         onChange={handleToggle}

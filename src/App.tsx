@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NavBar from "./components/NavBar";
 import Contents from "./components/Contents";
 
@@ -11,8 +11,8 @@ function App() {
     <div style={chooseMode()}>
       <div>
         <NavBar
-          isOn={darkMode}
-          handleToggle={() => {
+          isOnNav={darkMode}
+          handleToggleNav={() => {
             setDarkMode(!darkMode);
           }}
         />
@@ -23,13 +23,13 @@ function App() {
 }
 
 const DARK_STYLES = {
-  background: "black",
-  color: "white",
+  background: "#403d39",
+  color: "#fffcf2",
 };
 
 const LIGHT_STYLES = {
-  background: "white",
-  color: "black",
+  background: "#fffcf2",
+  color: "#403d39",
 };
 
 export default App;

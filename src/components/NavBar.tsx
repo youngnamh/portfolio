@@ -1,29 +1,32 @@
-import React from "react";
 import Switch from "./Switch";
+import "../styles/navbar.css";
 
 type NavProps = {
-  isOn: boolean;
-  handleToggle: () => void;
+  isOnNav: boolean;
+  handleToggleNav: (set: boolean) => void;
 };
 
-export default function NavBar({ isOn, handleToggle }: NavProps) {
+export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
   return (
-    <div style={NAV_STYLES}>
-      <div>About</div>
-      <div>Projects</div>
-      <div>Contact</div>
-      <Switch
-        isOn={isOn}
-        handleToggle={() => {
-          handleToggle(!isOn);
-        }}
-      />
+    <div className="container">
+      <div className="logo">logo</div>
+      <div className="tabs">
+        <div>About</div>
+        <div>Projects</div>
+        <div>Contact</div>
+        <Switch
+          isOn={isOnNav}
+          handleToggle={() => {
+            handleToggleNav(!isOnNav);
+          }}
+        />
+      </div>
     </div>
   );
 }
-
+/*
 const NAV_STYLES = {
   background: "black",
   color: "white",
   padding: "10px",
-};
+};*/
