@@ -28,7 +28,7 @@ const DARK_STYLES = {
 };
 
 const LIGHT_STYLES = {
-  background: "#f5ebe0",
+  background: "#fefae0",
   color: "black",
 };
 

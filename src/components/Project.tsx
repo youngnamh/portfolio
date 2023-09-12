@@ -16,10 +16,10 @@ export default function Project({
   return (
     <div>
       <div className="project-title">{title}</div>
-      <div className="project-category">{category}</div>
+      <div className="project-category faded">{category}</div>
       <img src={image} className="project-image"></img>
-
-      <div className="project-description">{description}</div>
+      <div className="project-description-header">Description</div>
+      <div className="project-description faded">{description}</div>
       <div>
         <a href={repo} target="_blank">
           <button className="project-demo">Live Preview</button>
