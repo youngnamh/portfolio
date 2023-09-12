@@ -34,7 +34,9 @@ export default function Contents() {
           <h1>Projects</h1>
           <AllProjects />
         </div>
-        <Tools />
+        <div>
+          <Tools />
+        </div>
       </div>
     </div>
   );

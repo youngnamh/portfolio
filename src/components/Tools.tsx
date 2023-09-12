@@ -33,6 +33,7 @@ export default function Tools() {
 
   return (
     <div className="skills-container">
+      <div style={{ fontSize: "5rem" }}>Skills</div>
       <div className="tech-container">{generateImages()}</div>
     </div>
   );

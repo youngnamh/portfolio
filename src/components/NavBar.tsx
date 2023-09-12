@@ -12,7 +12,6 @@ export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
       <div className="nav-container container">
         <div className="logo">Youngnam Hlady</div>
         <div className="tabs">
-          <div>About</div>
           <div>Projects</div>
           <div>Contact</div>
           <Switch

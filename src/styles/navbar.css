@@ -12,8 +12,9 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  opacity: 0.99;
+  padding: 1.5rem;
+  opacity: 0.9;
+  font-weight: bold;
 }
 
 .container {
