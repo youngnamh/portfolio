@@ -13,21 +13,32 @@ export default function Project({
   description,
   repo,
 }: ProjectProps) {
+  const imageStyle = {
+    backgroundImage: `url(${image})`,
+  };
+
   return (
-    <div>
+    <div className="project-div">
       <div className="project-title">{title}</div>
       <div className="project-category faded">{category}</div>
-      <img src={image} className="project-image"></img>
+      <div className="project-image-div" style={imageStyle}>
+        <img className="hidden-image" src={image}></img>
+        <div className="project-buttons">
+          <a href={repo} target="_blank">
+            <button className="project-demo ">Preview</button>
+          </a>
+          <a href={repo} target="_blank">
+            <button className="project-repo">View Code</button>
+          </a>
+        </div>
+      </div>
       <div className="project-description-header">Description</div>
       <div className="project-description faded">{description}</div>
-      <div>
-        <a href={repo} target="_blank">
-          <button className="project-demo">Live Preview</button>
-        </a>
-        <a href={repo} target="_blank">
-          <button className="project-repo">View Code</button>
-        </a>
-      </div>
     </div>
   );
 }
+
+/**
+ <img src={image} className="project-image" alt="project"></img> 
+ * 
+ */

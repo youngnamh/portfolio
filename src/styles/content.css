@@ -53,8 +53,9 @@ h1 {
   font-size: 5rem;
 }
 
-.project-image {
-  width: 100%;
+.project-div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project-title {
@@ -74,8 +75,6 @@ h1 {
   border-radius: 45px;
   background-color: #2a9d8f;
   padding: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
 }
 
 .project-repo {
@@ -83,7 +82,13 @@ h1 {
   border-radius: 45px;
   background-color: #7678ed;
   padding: 1rem;
-  margin-top: 1rem;
+}
+
+.project-demo,
+.project-repo {
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-demo:hover,
@@ -96,6 +101,28 @@ h1 {
   transform: scale(1);
 }
 
+.project-image-div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Set background size to auto */
+  width: 100%; /* Set width to auto to allow it to adjust */
+  height: auto; /* Set height to auto to allow it to adjust */
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border-radius: 20px;
+}
+
+.project-buttons {
+  margin-right: 1rem;
+}
+
 .faded {
-  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.hidden-image {
+  width: 100%;
+  visibility: hidden;
+  position: relative;
 }
