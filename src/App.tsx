@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Contents from "./components/Contents";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const chooseMode = () => (darkMode ? DARK_STYLES : LIGHT_STYLES);
 

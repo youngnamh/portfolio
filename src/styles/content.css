@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
 }
 
 .about-border {
@@ -22,6 +23,29 @@
   font-size: 5rem;
 }
 
+.skills-container {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+}
+
+@keyframes slide_animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
+.tech-container {
+  display: flex;
+  min-width: 320px;
+  width: calc(100vw - 20vw);
+  max-width: 1000px;
+}
+
 .tech-skill {
   display: flex;
   flex-direction: column;
@@ -30,57 +54,9 @@
   border: 2px solid;
   margin: 1rem;
   padding: 1rem;
-}
-
-.skills-container {
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.tech-container {
-  display: flex;
-  overflow-x: hidden;
-  min-width: 320px;
-  width: calc(100vw - 20vw);
-  max-width: 1000px;
-}
-
-@keyframes slide_animation {
-  0% {
-    left: 0px;
-  }
-  10% {
-    left: 0px;
-  }
-  20% {
-    left: 1200px;
-  }
-  30% {
-    left: 1200px;
-  }
-  40% {
-    left: 2400px;
-  }
-  50% {
-    left: 2400px;
-  }
-  60% {
-    left: 1200px;
-  }
-  70% {
-    left: 1200px;
-  }
-  80% {
-    left: 0px;
-  }
-  90% {
-    left: 0px;
-  }
-  100% {
-    left: 0px;
-  }
+  position: relative;
+  float: left;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 h1 {
@@ -161,4 +137,10 @@ h1 {
   width: 100%;
   visibility: hidden;
   position: relative;
+}
+
+.contact-div {
+  display: flex;
+  align-items: start;
+  justify-content: end;
 }

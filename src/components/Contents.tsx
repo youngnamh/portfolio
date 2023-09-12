@@ -2,6 +2,7 @@ import "../styles/content.css";
 import profile from "../assets/svg/profile.svg";
 import Tools from "./tools";
 import AllProjects from "./AllProjects";
+import Contact from "./Contact";
 
 export default function Contents() {
   return (
@@ -35,7 +36,12 @@ export default function Contents() {
           <AllProjects />
         </div>
         <div>
+          <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Skills</div>
           <Tools />
+        </div>
+        <div>
+          <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Contact</div>
+          <Contact />
         </div>
       </div>
     </div>
