@@ -8,25 +8,21 @@ type NavProps = {
 
 export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
   return (
-    <div className="container">
-      <div className="logo">logo</div>
-      <div className="tabs">
-        <div>About</div>
-        <div>Projects</div>
-        <div>Contact</div>
-        <Switch
-          isOn={isOnNav}
-          handleToggle={() => {
-            handleToggleNav(!isOnNav);
-          }}
-        />
+    <div className="nav-border">
+      <div className="nav-container container">
+        <div className="logo">Youngnam Hlady</div>
+        <div className="tabs">
+          <div>About</div>
+          <div>Projects</div>
+          <div>Contact</div>
+          <Switch
+            isOn={isOnNav}
+            handleToggle={() => {
+              handleToggleNav(!isOnNav);
+            }}
+          />
+        </div>
       </div>
     </div>
   );
 }
-/*
-const NAV_STYLES = {
-  background: "black",
-  color: "white",
-  padding: "10px",
-};*/

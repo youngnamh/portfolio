@@ -1,4 +1,10 @@
-.container {
+.nav-border {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
   background-color: black;
   color: white;
   display: flex;
@@ -6,7 +12,13 @@
   padding: 1rem;
 }
 
+.container {
+  min-width: 320px;
+  width: calc(100vw - 20vw);
+  max-width: 1000px;
+}
+
 .tabs {
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
 }
