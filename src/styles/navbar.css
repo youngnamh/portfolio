@@ -1,12 +1,15 @@
 .nav-border {
-  background-color: black;
+  position: fixed;
+  background-color: #168fff;
+  width: 100%;
   display: flex;
   justify-content: center;
+  opacity: 0.9;
 }
 
 .nav-container {
-  background-color: black;
-  color: white;
+  background-color: #168fff;
+  color: black;
   display: flex;
   justify-content: space-between;
   padding: 1rem;

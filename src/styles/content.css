@@ -59,10 +59,12 @@ h1 {
 
 .project-title {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .project-category {
   font-size: 1.5rem;
+  opacity: 0.7;
 }
 
 .project-demo {

@@ -23,13 +23,13 @@ function App() {
 }
 
 const DARK_STYLES = {
-  background: "#403d39",
-  color: "#fffcf2",
+  background: "black",
+  color: "white",
 };
 
 const LIGHT_STYLES = {
-  background: "#fffcf2",
-  color: "#403d39",
+  background: "#f5ebe0",
+  color: "black",
 };
 
 export default App;
