@@ -1,6 +1,7 @@
 import "../styles/content.css";
 import profile from "../assets/svg/profile.svg";
 import Tools from "./tools";
+import AllProjects from "./AllProjects";
 
 export default function Contents() {
   return (
@@ -25,10 +26,11 @@ export default function Contents() {
           facere nam officiis fuga id explicabo incidunt a. Impedit, velit?
           Sapiente iure ratione minima earum provident est perspiciatis!
         </div>
-        <Tools />
         <div>
           <h1>Projects</h1>
+          <AllProjects />
         </div>
+        <Tools />
       </div>
     </div>
   );
