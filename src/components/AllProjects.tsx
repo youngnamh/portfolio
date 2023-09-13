@@ -32,13 +32,14 @@ const projectArray = [
 
 export default function AllProjects() {
   const generateProjects = () => {
-    const projects = projectArray.map((project) => (
+    const projects = projectArray.map((project, index) => (
       <Project
         image={project.image}
         title={project.title}
         category={project.category}
         description={project.description}
         repo={project.repo}
+        key={index}
       />
     ));
     return projects;

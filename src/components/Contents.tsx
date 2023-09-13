@@ -17,7 +17,12 @@ export default function Contents() {
         </div>
 
         <div>
-          <img id="profile-pic" src={profile}></img>
+          <img
+            id="profile-pic"
+            src={profile}
+            alt="profile"
+            title="profile"
+          ></img>
         </div>
         <div className="faded">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi

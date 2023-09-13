@@ -140,3 +140,49 @@ h1 {
 .contact-item {
   padding: 1rem 0rem 1rem 0rem;
 }
+
+.email-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email-info {
+  min-width: 320px;
+  width: 60%;
+}
+
+.email-text {
+  resize: none;
+  height: 4rem;
+  overflow-y: scroll;
+}
+
+.send-div {
+  min-width: 320px;
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+
+.send-div > * {
+  background-color: #168fff;
+  border: none;
+  border-radius: 45px;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+.send-div > *:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.send-div > *:active {
+  transform: scale(1);
+  color: black;
+}
+
+.resume-anchor:visited {
+  color: inherit;
+}
