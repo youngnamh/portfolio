@@ -141,7 +141,7 @@ h1 {
   padding: 1rem 0rem 1rem 0rem;
 }
 
-.email-form {
+.email-div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

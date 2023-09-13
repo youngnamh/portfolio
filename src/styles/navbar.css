@@ -1,12 +1,13 @@
 .nav-border {
   position: fixed;
-  background-color: #168fff;
+  background-color: #168fffee;
   color: black;
   width: 100%;
   display: flex;
   justify-content: center;
-  opacity: 0.9;
   z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-container {
