@@ -39,7 +39,7 @@ export default function Contents() {
           <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Skills</div>
           <Tools />
         </div>
-        <div>
+        <div className="contact-page">
           <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Contact</div>
           <Contact />
         </div>

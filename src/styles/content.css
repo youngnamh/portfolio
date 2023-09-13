@@ -27,16 +27,6 @@
   margin-top: 1rem;
   margin-bottom: 5rem;
   overflow-x: scroll;
-  overscroll-behavior-inline: contain;
-}
-
-@keyframes slide_animation {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-30%);
-  }
 }
 
 .tech-container {
@@ -139,8 +129,6 @@ h1 {
   position: relative;
 }
 
-.contact-div {
-  display: flex;
-  align-items: start;
-  justify-content: end;
+.contact-page {
+  width: 100%;
 }
