@@ -6,7 +6,8 @@
   display: flex;
   justify-content: center;
   opacity: 0.9;
-  z-index: 100;
+  z-index: 10;
+  backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -15,6 +16,8 @@
   padding: 1.5rem;
   opacity: 0.9;
   font-weight: bold;
+  z-index: 11;
+  backdrop-filter: blur(10px);
 }
 
 .container {
@@ -26,4 +29,12 @@
 .tabs {
   display: flex;
   gap: 1rem;
+}
+
+.nav-anchor {
+  text-decoration: none;
+}
+
+.nav-anchor:visited {
+  color: black;
 }

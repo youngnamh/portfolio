@@ -1,6 +1,6 @@
 import "../styles/content.css";
 import profile from "../assets/svg/profile.svg";
-import Tools from "./tools";
+import Tools from "./Tools";
 import AllProjects from "./AllProjects";
 import Contact from "./Contact";
 
@@ -31,6 +31,7 @@ export default function Contents() {
           facere nam officiis fuga id explicabo incidunt a. Impedit, velit?
           Sapiente iure ratione minima earum provident est perspiciatis!
         </div>
+        <div id="project-anchor"></div>
         <div>
           <h1>Projects</h1>
           <AllProjects />
@@ -39,7 +40,7 @@ export default function Contents() {
           <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Skills</div>
           <Tools />
         </div>
-        <div className="contact-page">
+        <div className="contact-page" id="contact-anchor">
           <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Contact</div>
           <Contact />
         </div>
