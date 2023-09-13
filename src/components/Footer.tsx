@@ -23,6 +23,11 @@ export default function Footer() {
             <i className="devicon-github-original footer-icon"></i>
           </a>
         </div>
+        <div>
+          <a href="mailto:youngnamhlady@gmail.com" className="footer-icon">
+            <i className="fa-solid fa-envelope footer-icon"></i>
+          </a>
+        </div>
       </div>
       <div className="footer-copyright">
         © Copyright {currentYear}, Youngnam Hlady

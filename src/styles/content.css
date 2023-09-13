@@ -136,3 +136,7 @@ h1 {
 .contact-page {
   width: 100%;
 }
+
+.contact-item {
+  padding: 1rem 0rem 1rem 0rem;
+}
