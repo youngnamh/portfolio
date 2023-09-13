@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavBar from "./components/NavBar";
 import Contents from "./components/Contents";
+import Footer from "./components/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -17,6 +18,7 @@ function App() {
           }}
         />
         <Contents />
+        <Footer />
       </div>
     </div>
   );
