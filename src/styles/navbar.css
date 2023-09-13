@@ -38,3 +38,7 @@
 .nav-anchor:visited {
   color: black;
 }
+
+.nav-anchor:hover {
+  color: white;
+}
