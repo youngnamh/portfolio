@@ -1,6 +1,5 @@
 import Switch from "./Switch";
 import "../styles/navbar.css";
-import kamon from "../assets/svg/kamon.svg";
 
 type NavProps = {
   isOnNav: boolean;
@@ -12,9 +11,7 @@ export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
     <div>
       <div className="nav-border">
         <div className="nav-container">
-          <div className="logo">
-            <img src={kamon}></img>
-          </div>
+          <div className="logo-div">yhlady</div>
           <div className="tabs">
             <div>
               <a href="#project-anchor" className="nav-anchor">

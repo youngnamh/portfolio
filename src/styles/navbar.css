@@ -15,14 +15,14 @@
 
 #dm .nav-border {
   background-color: #168fff00;
-  color: white;
+  color: #ff0000;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   opacity: 0.9;
   font-weight: bold;
   z-index: 11;
@@ -36,13 +36,14 @@
   width: calc(100vw - 25vw);
   max-width: 1300px;
 }
-.logo {
-  font-size: 2rem;
+.logo-div {
+  font-size: 3rem;
 }
 
 .tabs {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .nav-anchor {
