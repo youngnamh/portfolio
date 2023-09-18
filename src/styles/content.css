@@ -6,12 +6,12 @@
   --dm-background: "";
   --dm-writing: "";
   --dm-faded: "";
-  --dm-accent: "";
+  --dm-accent: "#168fff";
 
   --lm-background: "";
   --lm-writing: "";
   --lm-faded: "";
-  --lm-accent: "";
+  --lm-accent: "#168fff";
 }
 
 * {
