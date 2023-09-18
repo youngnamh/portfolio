@@ -11,7 +11,6 @@ export default function Contact() {
       </div>
       <EmailForm />
       <div className="contact-item"></div>
-      <div className="contact-item">Currently based in Canada</div>
       <div className="contact-item">
         <a href={resume} target="_blank" className="resume-anchor">
           View Resume

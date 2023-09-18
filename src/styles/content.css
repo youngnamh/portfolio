@@ -1,3 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --dm-background: "";
+  --dm-writing: "";
+  --dm-faded: "";
+  --dm-accent: "";
+
+  --lm-background: "";
+  --lm-writing: "";
+  --lm-faded: "";
+  --lm-accent: "";
+}
+
 * {
   font-family: "Roboto Slab", serif;
   box-sizing: border-box;
@@ -7,20 +23,33 @@ html {
   scroll-behavior: smooth;
 }
 
-.about-border {
+.content-border {
   display: flex;
   justify-content: center;
 }
 
-.about-container {
+.content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.intro-media-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.intro-div {
+  padding-top: 7rem;
+  font-size: 5rem;
+}
+
 #profile-pic {
   width: 320px;
   height: 320px;
+  object-fit: contain;
+  border-radius: 100%;
 }
 
 .tech-icon {

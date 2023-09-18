@@ -8,8 +8,10 @@ function App() {
 
   const chooseMode = () => (darkMode ? DARK_STYLES : LIGHT_STYLES);
 
+  const modeId = () => (darkMode ? "dm" : "lm");
+
   return (
-    <div style={chooseMode()}>
+    <div style={chooseMode()} id={modeId()}>
       <div>
         <NavBar
           isOnNav={darkMode}
@@ -30,8 +32,8 @@ const DARK_STYLES = {
 };
 
 const LIGHT_STYLES = {
-  background: "#f5e6c9",
-  color: "#203435",
+  background: "#fdfcec",
+  color: "#0081a7",
 };
 
 export default App;

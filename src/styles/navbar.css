@@ -1,28 +1,43 @@
 .nav-border {
   position: fixed;
-  background-color: #168fffee;
-  color: black;
+  color: #168fff;
   width: 100%;
   display: flex;
   justify-content: center;
   z-index: 10;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+}
+
+#lm .nav-border {
+  background-color: #168fff00;
+  color: #168fff;
+}
+
+#dm .nav-border {
+  background-color: #168fff00;
+  color: white;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   opacity: 0.9;
   font-weight: bold;
   z-index: 11;
+  min-width: 320px;
+  width: calc(100vw - 10vw);
+  max-width: 1500px;
 }
 
 .container {
   min-width: 320px;
-  width: calc(100vw - 20vw);
-  max-width: 1000px;
+  width: calc(100vw - 25vw);
+  max-width: 1300px;
+}
+.logo {
+  font-size: 2rem;
 }
 
 .tabs {
