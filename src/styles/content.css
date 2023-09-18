@@ -34,15 +34,18 @@ html {
   align-items: center;
 }
 
+.about-container {
+}
+
 .intro-media-div {
   display: flex;
   align-items: center;
+  margin-top: 10rem;
   gap: 1rem;
 }
 
 .intro-div {
-  padding-top: 7rem;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 #profile-pic {
@@ -50,6 +53,12 @@ html {
   height: 320px;
   object-fit: contain;
   border-radius: 100%;
+}
+
+.summary-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-icon {
@@ -86,80 +95,6 @@ h1 {
   margin-top: 10rem;
   margin-bottom: 10rem;
   font-size: 5rem;
-}
-
-.project-div {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.project-title {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.project-category,
-.project-description-header {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-demo {
-  border: none;
-  border-radius: 45px;
-  background-color: #2a9d8f;
-  padding: 1rem;
-}
-
-.project-repo {
-  border: none;
-  border-radius: 45px;
-  background-color: #7678ed;
-  padding: 1rem;
-}
-
-.project-demo,
-.project-repo {
-  width: 100%;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-}
-
-.project-demo:hover,
-.project-repo:hover {
-  transform: scale(1.1);
-}
-
-.project-demo:active,
-.project-repo:active {
-  transform: scale(1);
-}
-
-.project-image-div {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; /* Set background size to auto */
-  width: 100%; /* Set width to auto to allow it to adjust */
-  height: auto; /* Set height to auto to allow it to adjust */
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  border-radius: 20px;
-}
-
-.project-buttons {
-  margin-right: 1rem;
-}
-
-.faded {
-  opacity: 0.9;
-}
-
-.hidden-image {
-  width: 100%;
-  visibility: hidden;
-  position: relative;
 }
 
 .contact-page {
@@ -214,4 +149,13 @@ h1 {
 
 .resume-anchor:visited {
   color: inherit;
+}
+
+@media (max-width: 768px) {
+  .intro-media-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }

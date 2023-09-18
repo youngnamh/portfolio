@@ -9,25 +9,7 @@ export default function Contents() {
     <div className="content-border">
       <div className="content-container container">
         <div className="about-container">
-          <div className="intro-div">
-            Hey!
-            <br />
-            I'm Youngnam.
-          </div>
           <div className="intro-media-div">
-            <div className="faded summary-div">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              nihil sapiente obcaecati facere nam officiis fuga id explicabo
-              incidunt a. Impedit, velit? Sapiente iure ratione minima earum
-              provident est perspiciatis!Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Excepturi nihil sapiente obcaecati facere nam
-              officiis fuga id explicabo incidunt a. Impedit, velit? Sapiente
-              iure ratione minima earum provident est perspiciatis!Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Excepturi nihil
-              sapiente obcaecati facere nam officiis fuga id explicabo incidunt
-              a. Impedit, velit? Sapiente iure ratione minima earum provident
-              est perspiciatis!
-            </div>
             <div className="profile-div">
               <img
                 id="profile-pic"
@@ -36,10 +18,31 @@ export default function Contents() {
                 title="profile"
               ></img>
             </div>
+            <div className="faded summary-div">
+              <div>
+                <div className="intro-div">
+                  Hey!
+                  <br />
+                  I'm Youngnam.
+                </div>
+                <div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi nihil sapiente obcaecati facere nam officiis fuga id
+                  explicabo incidunt a. Impedit, velit? Sapiente iure ratione
+                  minima earum provident est perspiciatis!Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Excepturi nihil sapiente
+                  obcaecati facere nam officiis fuga id explicabo incidunt a.
+                  Impedit, velit? Sapiente iure ratione minima earum provident
+                  est perspiciatis!Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Excepturi nihil sapiente obcaecati facere
+                  nam officiis fuga id explicabo incidunt a. Impedit, velit?
+                  Sapiente iure ratione minima earum provident est perspiciatis!
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div id="project-anchor"></div>
+        <p id="project-anchor"></p>
         <div>
           <h1>Projects</h1>
           <AllProjects />

@@ -1,0 +1,96 @@
+.project-div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.project-category {
+  font-size: 1.5rem;
+}
+
+.project-demo {
+  border: none;
+  border-radius: 45px;
+  background-color: #2a9d8f;
+  padding: 1rem;
+}
+
+.project-repo {
+  border: none;
+  border-radius: 45px;
+  background-color: #7678ed;
+  padding: 1rem;
+}
+
+.project-demo,
+.project-repo {
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-demo:hover,
+.project-repo:hover {
+  transform: scale(1.1);
+}
+
+.project-demo:active,
+.project-repo:active {
+  transform: scale(1);
+}
+
+.project-image-div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Set background size to auto */
+  width: 50%; /* Set width to auto to allow it to adjust */
+  height: auto; /* Set height to auto to allow it to adjust */
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border-radius: 20px;
+  flex-grow: 2;
+}
+
+.project-content {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.project-buttons {
+  margin-right: 1rem;
+}
+
+.faded {
+  opacity: 0.9;
+}
+
+.hidden-image {
+  width: 100%;
+  visibility: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .project-div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-image-div {
+    width: 100%;
+  }
+
+  .project-content {
+    width: 100%;
+  }
+}

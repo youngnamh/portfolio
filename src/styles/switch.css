@@ -41,7 +41,7 @@
   display: flex;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .react-switch-checkbox {
     height: 0;
     width: 0;

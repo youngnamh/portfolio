@@ -1,3 +1,5 @@
+import "../styles/project.css";
+
 type ProjectProps = {
   image: string;
   title: string;
@@ -19,8 +21,6 @@ export default function Project({
 
   return (
     <div className="project-div">
-      <div className="project-title">{title}</div>
-      <div className="project-category faded">{category}</div>
       <div className="project-image-div" style={imageStyle}>
         <img className="hidden-image" src={image}></img>
         <div className="project-buttons">
@@ -32,8 +32,11 @@ export default function Project({
           </a>
         </div>
       </div>
-      <div className="project-description-header">Description</div>
-      <div className="project-description faded">{description}</div>
+      <div className="project-content">
+        <div className="project-title">{title}</div>
+        <div className="project-category faded">{category}</div>
+        <div className="project-description faded">{description}</div>
+      </div>
     </div>
   );
 }
