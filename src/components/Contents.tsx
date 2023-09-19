@@ -21,7 +21,7 @@ export default function Contents() {
             <div className="faded summary-div">
               <div>
                 <div className="intro-div">Hey! I'm Youngnam.</div>
-                <div>
+                <div className="intro-description">
                   I am a software developer based out of Montreal, Canada. I am
                   a graduate of McGill University with a degree in Software
                   Engineering. I love everything to do with coding and am always

@@ -21,8 +21,8 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  align-items: center;
+
   opacity: 0.9;
   font-weight: bold;
   z-index: 11;
@@ -38,6 +38,7 @@
 }
 .logo-div {
   font-size: 3rem;
+  width: 5rem;
 }
 
 .tabs {
@@ -61,4 +62,15 @@
 
 .nav-anchor:active {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .logo-div {
+    font-size: 3rem;
+    width: 3rem;
+  }
+
+  .nav-anchor {
+    font-size: 1rem;
+  }
 }
