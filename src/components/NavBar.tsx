@@ -1,6 +1,7 @@
 import Switch from "./Switch";
 import "../styles/navbar.css";
 import kamon from "../assets/svg/kamon copy.svg";
+import kamonDM from "../assets/svg/kamon.white.svg";
 
 type NavProps = {
   isOnNav: boolean;
@@ -8,12 +9,14 @@ type NavProps = {
 };
 
 export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
+  const kamonColor = () => (!isOnNav ? kamon : kamonDM);
+
   return (
     <div>
       <div className="nav-border">
         <div className="nav-container">
           <a href="#">
-            <img src={kamon} className="logo-div"></img>
+            <img src={kamonColor()} className="logo-div"></img>
           </a>
 
           <div className="tabs">

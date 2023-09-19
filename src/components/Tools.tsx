@@ -17,7 +17,6 @@ const logosArray = [
   { url: "devicon-jest-plain colored", name: "JEST" },
   { url: "devicon-webpack-plain colored", name: "WEBPACK" },
   { url: "devicon-figma-plain colored", name: "FIGMA" },
-  { url: "devicon-bash-plain colored", name: "BASH" },
 ];
 
 export default function Tools() {
@@ -25,7 +24,7 @@ export default function Tools() {
     const elements = logosArray.map((logo, index) => (
       <div className="tech-skill" key={index}>
         <i className={logo.url + " tech-icon"}></i>
-        <div>{logo.name}</div>
+        <div className="logo-name">{logo.name}</div>
       </div>
     ));
     return elements;

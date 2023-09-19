@@ -43,15 +43,15 @@ export default function Contents() {
               </div>
             </div>
           </div>
+          <Tools />
         </div>
         <p id="project-anchor"></p>
         <div>
-          <h1>Projects</h1>
+          <h1 style={{ color: "#168fff" }}>Projects</h1>
           <AllProjects />
         </div>
         <div>
-          <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Skills</div>
-          <Tools />
+          {/* <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Skills</div> */}
         </div>
         <div className="contact-page" id="contact-anchor">
           <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Contact</div>
