@@ -85,8 +85,10 @@ html {
 }
 
 .tech-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
   min-width: 320px;
   width: calc(100vw - 20vw);
   max-width: 1000px;
@@ -97,13 +99,30 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
   margin: 1rem;
   height: 5.5rem;
   width: 5.5rem;
   position: relative;
   float: left;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#lm .tech-skill:hover {
+  border-color: #168fff;
+  filter: brightness(70%);
+}
+
+#dm .tech-skill:hover {
+  border-color: #89eed1;
+  filter: brightness(130%);
+}
+
+#dm .tech-skill {
+  border: 2px solid #94a9bd;
+}
+
+#lm .tech-skill {
+  border: 2px solid #343a40;
 }
 
 .logo-name {
@@ -114,7 +133,7 @@ h1 {
 }
 
 #lm .project-header {
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-bottom: 10rem;
   font-size: 5rem;
   color: #168fff;
@@ -122,7 +141,7 @@ h1 {
 }
 
 #dm .project-header {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 10rem;
   font-size: 5rem;
   color: #89eed1;
@@ -202,6 +221,13 @@ h1 {
     align-items: center;
     gap: 1rem;
   }
+
+  .tech-container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -224,5 +250,11 @@ h1 {
   }
 }
 
-@media (max-width: 860px) {
+@media (min-width: 1500px) {
+  .tech-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+  }
 }

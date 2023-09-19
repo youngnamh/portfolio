@@ -5,6 +5,7 @@ type ProjectProps = {
   title: string;
   category: string;
   description: string;
+  preview: string;
   repo: string;
   toolsArray: Array<string>;
 };
@@ -14,6 +15,7 @@ export default function Project({
   title,
   category,
   description,
+  preview,
   repo,
   toolsArray,
 }: ProjectProps) {
@@ -30,16 +32,24 @@ export default function Project({
     return tools;
   };
 
+  const generatePreview = () => {
+    if (preview != "" || preview == null) {
+      return (
+        <a href={preview} target="_blank">
+          <button className="project-demo ">Preview</button>
+        </a>
+      );
+    }
+  };
+
   return (
     <div className="project-div">
       <div className="project-image-div" style={imageStyle}>
         <img className="hidden-image" src={image}></img>
         <div className="project-buttons">
+          {generatePreview()}
           <a href={repo} target="_blank">
-            <button className="project-demo ">Preview</button>
-          </a>
-          <a href={repo} target="_blank">
-            <button className="project-repo">View Code</button>
+            <button className="project-repo">Repo</button>
           </a>
         </div>
       </div>
