@@ -71,3 +71,11 @@
 #dm .footer-copyright {
   color: #89eed1;
 }
+
+@media (max-width: 768px) {
+  .footer-links-div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

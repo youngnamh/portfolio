@@ -111,17 +111,20 @@ html {
 }
 
 h1 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  font-size: 5rem;
 }
 
 #lm .project-header {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  font-size: 5rem;
   color: #168fff;
   text-align: center;
 }
 
 #dm .project-header {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  font-size: 5rem;
   color: #89eed1;
   text-align: center;
 }
@@ -129,9 +132,17 @@ h1 {
 .contact-page {
   width: 100%;
 }
+.contact-div {
+  display: flex;
+  justify-content: center;
+}
 
 .contact-item {
   padding: 1rem 0rem 1rem 0rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  min-width: 320px;
+  width: 70%;
 }
 
 .email-div {

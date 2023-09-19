@@ -42,6 +42,10 @@
   width: 5rem;
 }
 
+.logo-div:hover {
+  transform: scale(1.1);
+}
+
 .tabs {
   display: flex;
   gap: 1rem;

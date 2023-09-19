@@ -6,6 +6,7 @@ type ProjectProps = {
   category: string;
   description: string;
   repo: string;
+  toolsArray: Array<string>;
 };
 
 export default function Project({
@@ -14,9 +15,19 @@ export default function Project({
   category,
   description,
   repo,
+  toolsArray,
 }: ProjectProps) {
   const imageStyle = {
     backgroundImage: `url(${image})`,
+  };
+
+  const generateTools = () => {
+    const tools = toolsArray.map((tool, index) => (
+      <div className="project-tool" key={index}>
+        {tool}
+      </div>
+    ));
+    return tools;
   };
 
   return (
@@ -36,12 +47,8 @@ export default function Project({
         <div className="project-title accent">{title}</div>
         <div className="project-category faded">{category}</div>
         <div className="project-description faded">{description}</div>
+        <div className="project-tools-div">{generateTools()}</div>
       </div>
     </div>
   );
 }
-
-/**
- <img src={image} className="project-image" alt="project"></img> 
- * 
- */

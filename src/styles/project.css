@@ -90,6 +90,27 @@
   position: relative;
 }
 
+.project-tools-div {
+  display: flex;
+}
+
+.project-tool {
+  margin: 0.25rem;
+  padding: 0.375rem;
+  border-radius: 15px;
+}
+
+#dm .project-tool {
+  background: #0077b6;
+  color: #c5cee6;
+}
+
+#lm .project-tool {
+  background: #f7e1d7;
+  color: #343a40;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 860px) {
   .project-div {
     padding-top: 2rem;
