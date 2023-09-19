@@ -20,23 +20,25 @@ export default function Contents() {
             </div>
             <div className="faded summary-div">
               <div>
-                <div className="intro-div">
-                  Hey!
-                  <br />
-                  I'm Youngnam.
-                </div>
+                <div className="intro-div">Hey! I'm Youngnam.</div>
                 <div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nihil sapiente obcaecati facere nam officiis fuga id
-                  explicabo incidunt a. Impedit, velit? Sapiente iure ratione
-                  minima earum provident est perspiciatis!Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Excepturi nihil sapiente
-                  obcaecati facere nam officiis fuga id explicabo incidunt a.
-                  Impedit, velit? Sapiente iure ratione minima earum provident
-                  est perspiciatis!Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Excepturi nihil sapiente obcaecati facere
-                  nam officiis fuga id explicabo incidunt a. Impedit, velit?
-                  Sapiente iure ratione minima earum provident est perspiciatis!
+                  I am a software developer based out of Montreal, Canada. I am
+                  a graduate of McGill University with a degree in Software
+                  Engineering. I love everything to do with coding and am always
+                  tring to learn new things. Right now my focus is on full-stack
+                  web development.
+                  <br />
+                  When I am not working I love to be outdoors. You can catch me
+                  snowboarding in the winter and running all summer (check out
+                  my{" "}
+                  <a
+                    href="https://www.strava.com/athletes/64603272"
+                    target="_blank"
+                  >
+                    Strava
+                  </a>
+                  !). My logo is inspired by my family's "Kamon", which is a
+                  Japanese family crest.
                 </div>
               </div>
             </div>
