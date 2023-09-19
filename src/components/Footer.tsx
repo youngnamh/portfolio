@@ -1,4 +1,5 @@
 import "../styles/footer.css";
+import resume from "../assets/files/Resume for website.pdf";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,7 +26,12 @@ export default function Footer() {
         </div>
         <div>
           <a href="mailto:youngnamhlady@gmail.com" className="footer-icon">
-            <i className="fa-solid fa-envelope footer-icon"></i>
+            <i className="fa-solid fa-envelope footer-icon "></i>
+          </a>
+        </div>
+        <div className="resume">
+          <a href={resume} target="_blank" className="resume-anchor">
+            View Resume
           </a>
         </div>
       </div>

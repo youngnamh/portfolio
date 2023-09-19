@@ -20,7 +20,7 @@ export default function Contents() {
             </div>
             <div className="faded summary-div">
               <div>
-                <div className="intro-div">Hey! I'm Youngnam.</div>
+                <div className="intro-div accent">Hey! I'm Youngnam.</div>
                 <div className="intro-description">
                   I am a software developer based out of Montreal, Canada. I am
                   a graduate of McGill University with a degree in Software
@@ -34,6 +34,7 @@ export default function Contents() {
                   <a
                     href="https://www.strava.com/athletes/64603272"
                     target="_blank"
+                    className="strava"
                   >
                     Strava
                   </a>
@@ -47,14 +48,19 @@ export default function Contents() {
         </div>
         <p id="project-anchor"></p>
         <div>
-          <h1 style={{ color: "#168fff" }}>Projects</h1>
+          <h1 className="project-header">Projects</h1>
           <AllProjects />
         </div>
         <div>
           {/* <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Skills</div> */}
         </div>
         <div className="contact-page" id="contact-anchor">
-          <div style={{ fontSize: "5rem", marginTop: "10rem" }}>Contact</div>
+          <div
+            className="project-header"
+            style={{ fontSize: "5rem", marginTop: "10rem" }}
+          >
+            Contact
+          </div>
           <Contact />
         </div>
       </div>

@@ -15,7 +15,7 @@
 
 #dm .nav-border {
   background-color: #168fff00;
-  color: #ff0000;
+  color: #89eed1;
 }
 
 .nav-container {
@@ -52,16 +52,34 @@
   text-decoration: none;
 }
 
-.nav-anchor:visited {
-  color: black;
+#dm .nav-anchor,
+#dm .nav-anchor:visited {
+  color: #89eed1;
 }
 
-.nav-anchor:hover {
+#dm .nav-anchor:hover {
   color: white;
+  transform: scale(1.1);
 }
 
-.nav-anchor:active {
-  color: black;
+#dm .nav-anchor:active {
+  color: #89eed1;
+  transform: scale(1);
+}
+
+#lm .nav-anchor,
+#lm .nav-anchor:visited {
+  color: #168fff;
+}
+
+#lm .nav-anchor:hover {
+  color: #044c82;
+  transform: scale(1.1);
+}
+
+#lm .nav-anchor:active {
+  color: #168fff;
+  transform: scale(1);
 }
 
 @media (max-width: 768px) {

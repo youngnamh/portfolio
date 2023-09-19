@@ -27,8 +27,8 @@ function App() {
 }
 
 const DARK_STYLES = {
-  background: "black",
-  color: "white",
+  background: "#0E192D",
+  color: "#94A9BD",
 };
 
 const LIGHT_STYLES = {

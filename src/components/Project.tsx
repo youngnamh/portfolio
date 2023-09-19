@@ -33,7 +33,7 @@ export default function Project({
         </div>
       </div>
       <div className="project-content">
-        <div className="project-title">{title}</div>
+        <div className="project-title accent">{title}</div>
         <div className="project-category faded">{category}</div>
         <div className="project-description faded">{description}</div>
       </div>
