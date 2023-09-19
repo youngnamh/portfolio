@@ -15,18 +15,18 @@ export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
     <div>
       <div className="nav-border">
         <div className="nav-container">
-          <a href="#">
-            <img src={kamonColor()} className="logo-div"></img>
+          <a href="#" title="home">
+            <img src={kamonColor()} className="logo-div" alt="my-logo"></img>
           </a>
 
           <div className="tabs">
             <div>
-              <a href="#project-anchor" className="nav-anchor">
+              <a href="#project-anchor" title="project" className="nav-anchor">
                 Projects
               </a>
             </div>
             <div>
-              <a href="#contact-anchor" className="nav-anchor">
+              <a href="#contact-anchor" title="contact" className="nav-anchor">
                 Contact
               </a>
             </div>

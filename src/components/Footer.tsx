@@ -11,6 +11,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/youngnamh/"
             target="_blank"
             className="footer-icon"
+            title="linkedin"
           >
             <i className="devicon-linkedin-plain footer-icon"></i>
           </a>
@@ -20,17 +21,27 @@ export default function Footer() {
             href="https://github.com/youngnamh"
             target="_blank"
             className="footer-icon"
+            title="github"
           >
             <i className="devicon-github-original footer-icon"></i>
           </a>
         </div>
         <div>
-          <a href="mailto:youngnamhlady@gmail.com" className="footer-icon">
+          <a
+            href="mailto:youngnamhlady@gmail.com"
+            className="footer-icon"
+            title="email"
+          >
             <i className="fa-solid fa-envelope footer-icon "></i>
           </a>
         </div>
         <div className="resume">
-          <a href={resume} target="_blank" className="resume-anchor">
+          <a
+            href={resume}
+            target="_blank"
+            className="resume-anchor"
+            title="resume"
+          >
             View Resume
           </a>
         </div>

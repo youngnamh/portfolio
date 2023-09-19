@@ -35,9 +35,6 @@ html {
   align-items: center;
 }
 
-.about-container {
-}
-
 .intro-media-div {
   display: flex;
   align-items: center;
@@ -60,15 +57,10 @@ html {
   border-radius: 100%;
 }
 
-#lm .strava:hover,
-#dm .strava:hover {
-  color: red;
-}
-
 #lm .strava,
 #lm .strava:visited {
   text-decoration: none;
-  color: #f96c4b;
+  color: #ff6c4b;
 }
 
 #dm .strava,
@@ -131,6 +123,7 @@ h1 {
 
 #dm .project-header {
   color: #89eed1;
+  text-align: center;
 }
 
 .contact-page {
