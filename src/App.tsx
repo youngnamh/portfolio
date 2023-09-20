@@ -33,7 +33,7 @@ const DARK_STYLES = {
 
 const LIGHT_STYLES = {
   background: "#ece8ef",
-  color: "#343a40",
+  color: "#4c535a",
 };
 
 export default App;

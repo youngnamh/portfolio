@@ -25,25 +25,29 @@
   font-size: 1.5rem;
 }
 
-.project-demo {
-  border: none;
-  border-radius: 45px;
-  background-color: #2a9d8f;
-  padding: 1rem;
-}
-
+.project-demo,
 .project-repo {
   border: none;
   border-radius: 45px;
-  background-color: #7678ed;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .project-demo,
 .project-repo {
   width: 100%;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
+}
+
+#lm .project-demo,
+#lm .project-repo {
+  background-color: #168fff;
+}
+
+#dm .project-demo,
+#dm .project-repo {
+  background-color: #89eed1;
 }
 
 .project-demo:hover,

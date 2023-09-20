@@ -60,13 +60,13 @@ html {
 #lm .strava,
 #lm .strava:visited {
   text-decoration: none;
-  color: #ff6c4b;
+  color: #168fff;
 }
 
 #dm .strava,
 #dm .strava:visited {
   text-decoration: none;
-  color: #fcaf3f;
+  color: #89eed1;
 }
 
 .summary-div {
@@ -77,6 +77,7 @@ html {
 
 .tech-icon {
   font-size: 3rem;
+  text-shadow: 1px 1px 3px grey;
 }
 
 .skills-container {
@@ -86,6 +87,7 @@ html {
 
 .tech-container {
   display: grid;
+  margin: 0 auto;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
@@ -99,12 +101,12 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  margin: 0 auto;
   height: 5.5rem;
   width: 5.5rem;
   position: relative;
   float: left;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  */
 }
 
 #lm .tech-skill:hover {
@@ -122,7 +124,6 @@ html {
 }
 
 #lm .tech-skill {
-  border: 2px solid #343a40;
 }
 
 .logo-name {
@@ -207,7 +208,7 @@ h1 {
 }
 
 #lm .accent {
-  color: #0a9396;
+  color: #343a40;
 }
 
 #dm .accent {
