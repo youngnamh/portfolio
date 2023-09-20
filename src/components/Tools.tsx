@@ -32,6 +32,7 @@ export default function Tools() {
 
   return (
     <div className="skills-container">
+      <div className="project-header">Skills</div>
       <div className="tech-container">{generateImages()}</div>
     </div>
   );
