@@ -30,12 +30,14 @@ export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
                 Contact
               </a>
             </div>
-            <ModeToggle
-              isOn={isOnNav}
-              handleToggle={() => {
-                handleToggleNav(!isOnNav);
-              }}
-            />
+            <div className="toggle-scaler">
+              <ModeToggle
+                isOn={isOnNav}
+                handleToggle={() => {
+                  handleToggleNav(!isOnNav);
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

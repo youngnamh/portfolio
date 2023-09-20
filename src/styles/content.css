@@ -55,6 +55,7 @@ html {
   height: 320px;
   object-fit: contain;
   border-radius: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 #lm .strava,
