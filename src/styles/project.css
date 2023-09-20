@@ -17,8 +17,7 @@
 }
 
 .project-title {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .project-category {
@@ -43,6 +42,7 @@
 #lm .project-demo,
 #lm .project-repo {
   background-color: #168fff;
+  color: #ece8ef;
 }
 
 #dm .project-demo,

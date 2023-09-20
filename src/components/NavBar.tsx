@@ -1,4 +1,3 @@
-import Switch from "./Switch";
 import ModeToggle from "./ModeToggle";
 import "../styles/navbar.css";
 import kamon from "../assets/svg/kamon copy.svg";
@@ -31,12 +30,6 @@ export default function NavBar({ isOnNav, handleToggleNav }: NavProps) {
                 Contact
               </a>
             </div>
-            <Switch
-              isOn={isOnNav}
-              handleToggle={() => {
-                handleToggleNav(!isOnNav);
-              }}
-            />
             <ModeToggle
               isOn={isOnNav}
               handleToggle={() => {
