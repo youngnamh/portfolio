@@ -96,7 +96,7 @@ html {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  min-width: 320px;
+  min-width: 200px;
   width: calc(100vw - 20vw);
   max-width: 1000px;
 }
@@ -170,7 +170,7 @@ html {
   padding: 1rem 0rem 1rem 0rem;
   margin-bottom: 5rem;
   text-align: center;
-  min-width: 320px;
+  min-width: 200px;
   width: 70%;
   font-size: 1.5rem;
 }
@@ -182,7 +182,7 @@ html {
 }
 
 .email-info {
-  min-width: 320px;
+  min-width: 200px;
   width: 60%;
 }
 
@@ -193,7 +193,7 @@ html {
 }
 
 .send-div {
-  min-width: 320px;
+  min-width: 200px;
   width: 60%;
   display: flex;
   justify-content: end;
@@ -238,6 +238,11 @@ html {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+
+  #profile-pic {
+    width: 250px;
+    height: 250px;
   }
 }
 
