@@ -26,7 +26,7 @@ const projectArray = [
   },
   {
     image: project3,
-    title: "Kurita Co",
+    title: "Kurita Co.",
     category: "Online Store",
     description:
       "A multipage, front end store built with React Router. The website uses the Fake Store API to fetch product data. Users can browse, add, and remove items to and from the cart.",
