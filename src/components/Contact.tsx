@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <div className="contact-div">
-      <div className="contact-item" style={{ fontSize: "1.5rem" }}>
+      <div className="contact-item">
         If you have any questions, or would like to discuss future
         opportunities, please feel free to send me an email or reach out on any
         of my social media accounts.

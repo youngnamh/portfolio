@@ -1,38 +1,45 @@
 import Project from "./Project";
-import project1 from "../assets/images/project1.jpg";
-import project2 from "../assets/images/project2.jpg";
-import project3 from "../assets/images/project3.jpg";
+import project1 from "../assets/images/splendor.jpeg";
+import project2 from "../assets/images/TaskBully.jpeg";
+import project3 from "../assets/images/kuritaCo.jpeg";
 
 const projectArray = [
   {
     image: project1,
-    title: "Title1",
+    title: "Splendor",
     category: "Boardgame",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil sapiente obcaecati facere nam officiis fuga id explicabo incidunt a. Impedit, velit? Sapiente iure ratione minima earum provident est perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil sapiente obcaecati facere nam",
-    preview: "https://google.ca",
+      "Online version of the popular board game where players take turns taking gems, and buying cards until someone reaches 15 points. Implemented with all 4 extensions playable.",
+    preview: "",
     repo: "https://github.com/COMP361/f2022-hexanome-08",
-    toolsArray: ["Javascript", "HTML", "CSS"],
+    toolsArray: ["Java", "JavaFX", "Springboot", "Maven", "Docker"],
   },
   {
     image: project2,
-    title: "Title2",
-    category: "Boardgame",
+    title: "Task Bully",
+    category: "Taskmanager",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil sapiente obcaecati facere nam officiis fuga id explicabo incidunt a. Impedit, velit? Sapiente iure ratione minima earum provident est perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil sapiente obcaecati facere nam",
+      "Co-developed an award-winning iOS To-Do list application using Swift and SwiftUI. It detects and combats procrastination through personalized push notifications. Fight procrastination with our 3 effective modes: Encouraging, Passive Aggressive, and Bully",
     preview: "",
-    repo: "https://github.com/COMP361/f2022-hexanome-08",
-    toolsArray: ["Javascript", "HTML", "CSS"],
+    repo: "https://github.com/fjborrell/TaskBully",
+    toolsArray: ["Swift", "SwiftUI"],
   },
   {
     image: project3,
-    title: "Title3",
-    category: "Boardgame",
+    title: "Kurita Co",
+    category: "Online Store",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil sapiente obcaecati facere nam officiis fuga id explicabo incidunt a. Impedit, velit? Sapiente iure ratione minima earum provident est perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil sapiente obcaecati facere nam",
+      "A multipage, front end store built with React Router. The website uses the Fake Store API to fetch product data. Users can browse, add, and remove items to and from the cart.",
     preview: "",
-    repo: "https://github.com/COMP361/f2022-hexanome-08",
-    toolsArray: ["Javascript", "HTML", "CSS"],
+    repo: "https://github.com/youngnamh/shopping-cart",
+    toolsArray: [
+      "Javascript",
+      "React",
+      "React Router",
+      "HTML",
+      "CSS",
+      "TailwindCSS",
+    ],
   },
 ];
 
@@ -53,5 +60,25 @@ export default function AllProjects() {
     return projects;
   };
 
-  return <div>{generateProjects()}</div>;
+  return (
+    <div>
+      <div className="column">
+        <div className="contact-item" style={{ width: "70%" }}>
+          Below, you will find some of the different projects I have completed.
+          For a more extensive list of the things I have worked on or am
+          currently working on, you can check out my{" "}
+          <a
+            className="strava"
+            href="https://github.com/youngnamh"
+            target="_blank"
+          >
+            Github
+          </a>
+          , or just ask me!
+        </div>
+      </div>
+
+      {generateProjects()}
+    </div>
+  );
 }

@@ -78,7 +78,6 @@ html {
 
 .tech-icon {
   font-size: 3rem;
-  text-shadow: 1px 1px 3px grey;
 }
 
 .skills-container {
@@ -107,7 +106,6 @@ html {
   width: 5.5rem;
   position: relative;
   float: left;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  */
 }
 
 #lm .tech-skill:hover {
@@ -122,33 +120,37 @@ html {
 
 #dm .tech-skill {
   border: 2px solid #94a9bd;
+  background-color: #1b2a44;
 }
 
 #lm .tech-skill {
   border: 2px solid #4c535a;
+  background-color: #faf3f0;
 }
 
 .logo-name {
   font-size: 0.75rem;
 }
 
-h1 {
-}
-
-#lm .project-header {
+.project-header {
   margin-top: 4rem;
   margin-bottom: 10rem;
   font-size: 5rem;
-  color: #168fff;
   text-align: center;
 }
 
+#lm .project-header {
+  color: #168fff;
+}
+
 #dm .project-header {
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-  font-size: 5rem;
   color: #89eed1;
-  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-page {
@@ -165,6 +167,7 @@ h1 {
   text-align: center;
   min-width: 320px;
   width: 70%;
+  font-size: 1.5rem;
 }
 
 .email-div {
