@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Contents from "./components/Contents";
 import Footer from "./components/Footer";
@@ -7,6 +7,17 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   const chooseMode = () => (darkMode ? DARK_STYLES : LIGHT_STYLES);
+
+  const chooseBackground = () =>
+    darkMode ? DARK_STYLES.background : LIGHT_STYLES.background;
+
+  useEffect(() => {
+    const backgroundColor = chooseBackground();
+    const html = document.querySelector("html");
+    if (html != null) {
+      html.style.backgroundColor = backgroundColor;
+    }
+  });
 
   const modeId = () => (darkMode ? "dm" : "lm");
 
