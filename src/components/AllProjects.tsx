@@ -42,7 +42,7 @@ const projectArray = [
       "Developed during a 24 hour game challenge. The classic game with many new twists such as powerups, custom sounds, and the fate of the universe in your hands.",
     preview: "",
     repo: "https://github.com/youngnamh/Pong",
-    toolsArray: ["Unity", "WebGL"],
+    toolsArray: ["Unity", "WebGL", "C#", "NuGet"],
     demo: "https://youngnamh.itch.io/space-pong",
   },
   {
