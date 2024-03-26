@@ -8,6 +8,7 @@ type ProjectProps = {
   preview: string;
   repo: string;
   toolsArray: Array<string>;
+  demo: string;
 };
 
 export default function Project({
@@ -18,9 +19,22 @@ export default function Project({
   preview,
   repo,
   toolsArray,
+  demo,
 }: ProjectProps) {
   const imageStyle = {
     backgroundImage: `url(${image})`,
+  };
+
+  const generateDemoButton = () => {
+    if (demo != "") {
+      return (
+        <a href={demo} target="_blank">
+          <button className="project-demo">Demo</button>
+        </a>
+      );
+    } else {
+      return null;
+    }
   };
 
   const generateTools = () => {
@@ -51,6 +65,7 @@ export default function Project({
           <a href={repo} target="_blank">
             <button className="project-repo">Repo</button>
           </a>
+          {generateDemoButton()}
         </div>
       </div>
       <div className="project-content">

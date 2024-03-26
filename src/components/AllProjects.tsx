@@ -2,6 +2,7 @@ import Project from "./Project";
 import project1 from "../assets/images/splendor.jpeg";
 import project2 from "../assets/images/TaskBully.jpeg";
 import project3 from "../assets/images/kuritaCo.jpeg";
+import project4 from "../assets/images/spacePong.png";
 
 const projectArray = [
   {
@@ -13,16 +14,7 @@ const projectArray = [
     preview: "",
     repo: "https://github.com/COMP361/f2022-hexanome-08",
     toolsArray: ["Java", "JavaFX", "Springboot", "Maven", "Docker"],
-  },
-  {
-    image: project2,
-    title: "Task Bully",
-    category: "Taskmanager",
-    description:
-      "Co-developed an award-winning iOS To-Do list application using Swift and SwiftUI. It detects and combats procrastination through personalized push notifications. Fight procrastination with our 3 effective modes: Encouraging, Passive Aggressive, and Bully",
-    preview: "",
-    repo: "https://github.com/fjborrell/TaskBully",
-    toolsArray: ["Swift", "SwiftUI"],
+    demo: "",
   },
   {
     image: project3,
@@ -40,6 +32,29 @@ const projectArray = [
       "CSS",
       "TailwindCSS",
     ],
+    demo: "https://shopp-a4bb6.web.app/",
+  },
+  {
+    image: project4,
+    title: "Space Pong",
+    category: "Single Player Game",
+    description:
+      "Developed during a 24 hour game challenge. The classic game with many new twists such as powerups, custom sounds, and the fate of the universe in your hands.",
+    preview: "",
+    repo: "https://github.com/youngnamh/Pong",
+    toolsArray: ["Unity", "WebGL"],
+    demo: "https://youngnamh.itch.io/space-pong",
+  },
+  {
+    image: project2,
+    title: "Task Bully",
+    category: "Taskmanager",
+    description:
+      "Co-developed an award-winning iOS To-Do list application using Swift and SwiftUI. It detects and combats procrastination through personalized push notifications. Fight procrastination with our 3 effective modes: Encouraging, Passive Aggressive, and Bully",
+    preview: "",
+    repo: "https://github.com/fjborrell/TaskBully",
+    toolsArray: ["Swift", "SwiftUI"],
+    demo: "",
   },
 ];
 
@@ -55,6 +70,7 @@ export default function AllProjects() {
         repo={project.repo}
         key={index}
         toolsArray={project.toolsArray}
+        demo={project.demo}
       />
     ));
     return projects;
